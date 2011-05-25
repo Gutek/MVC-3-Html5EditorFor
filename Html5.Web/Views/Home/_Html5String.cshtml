@@ -1,0 +1,56 @@
+﻿@model Html5.Web.Models.StringViewModel
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>StringViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Password)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Email)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Url)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Url)
+            @Html.ValidationMessageFor(model => model.Url)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Search)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Search)
+            @Html.ValidationMessageFor(model => model.Search)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Color)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Color)
+            @Html.ValidationMessageFor(model => model.Color)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

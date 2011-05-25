@@ -1,0 +1,64 @@
+﻿@model Html5.Web.Models.DateViewModel
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>DateViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Date)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Date)
+            @Html.ValidationMessageFor(model => model.Date)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DateTime)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DateTime)
+            @Html.ValidationMessageFor(model => model.DateTime)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.DateTimeLocal)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.DateTimeLocal)
+            @Html.ValidationMessageFor(model => model.DateTimeLocal)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Time)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Time)
+            @Html.ValidationMessageFor(model => model.Time)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Week)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Week)
+            @Html.ValidationMessageFor(model => model.Week)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Month)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Month)
+            @Html.ValidationMessageFor(model => model.Month)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

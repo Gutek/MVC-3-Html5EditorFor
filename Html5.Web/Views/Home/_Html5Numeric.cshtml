@@ -1,0 +1,72 @@
+﻿@model Html5.Web.Models.NumericViewModel
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <legend>NumericViewModel</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Byte)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Byte, null, attributes: new { style = "font-weight: bold; color: red; background-color: black" })
+            @Html.ValidationMessageFor(model => model.Byte)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Short)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Short)
+            @Html.ValidationMessageFor(model => model.Short)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Int)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Int)
+            @Html.ValidationMessageFor(model => model.Int)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Long)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Long)
+            @Html.ValidationMessageFor(model => model.Long)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Float)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Float)
+            @Html.ValidationMessageFor(model => model.Float)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Double)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Double)
+            @Html.ValidationMessageFor(model => model.Double)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Decimal)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.Decimal)
+            @Html.ValidationMessageFor(model => model.Decimal)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

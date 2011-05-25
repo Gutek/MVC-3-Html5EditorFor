@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Html5.Web", "Html5.Web\Html5.Web.csproj", "{475B2F38-2F3F-46D0-9149-DB11658BF7A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "System.Web.Mvc.Html5", "System.Web.Mvc.Html5\System.Web.Mvc.Html5.csproj", "{9D2A068E-721A-4B49-AD0E-2E707BC976BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{475B2F38-2F3F-46D0-9149-DB11658BF7A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{475B2F38-2F3F-46D0-9149-DB11658BF7A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{475B2F38-2F3F-46D0-9149-DB11658BF7A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{475B2F38-2F3F-46D0-9149-DB11658BF7A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D2A068E-721A-4B49-AD0E-2E707BC976BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D2A068E-721A-4B49-AD0E-2E707BC976BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D2A068E-721A-4B49-AD0E-2E707BC976BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D2A068E-721A-4B49-AD0E-2E707BC976BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

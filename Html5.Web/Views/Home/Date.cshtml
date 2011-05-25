@@ -1,0 +1,14 @@
+﻿@model Html5.Web.Models.DateViewModel
+
+@{
+    ViewBag.Title = "Date";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Date HTML 5</h2>
+
+@Html.Partial("_Html5Date", Model)
+
+<h2>Date HTML </h2>
+
+@Html.Partial("_HtmlDate", Model)

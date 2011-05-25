@@ -1,0 +1,15 @@
+﻿@model Html5.Web.Models.StringViewModel
+
+@{
+    ViewBag.Title = "String";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>String HTML 5</h2>
+
+@Html.Partial("_Html5String", Model)
+
+<h2>String HTML </h2>
+
+@Html.Partial("_HtmlString", Model)
