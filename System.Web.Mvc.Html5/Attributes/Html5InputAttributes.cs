@@ -54,9 +54,9 @@
         public Html5MonthAttribute() : base("type", "month") { }
     }
 
-    public class HtmlDateAttribute : HtmlAttribute
+    public class Html5DateAttribute : HtmlAttribute
     {
-        public HtmlDateAttribute() : base("type", "date") { }
+        public Html5DateAttribute() : base("type", "date") { }
     }
 
     public class Html5DateTimeAttribute : HtmlAttribute
