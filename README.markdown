@@ -15,4 +15,4 @@ Code on github contains:
 - Source code for Html5EditorFor
 - Sample web site
  
-Library is avaliable on [NuGet](http://www.nuget.org/Package/Html5EditorFor/1.0)
+Library is avaliable on [NuGet](http://www.nuget.org/List/Packages/Html5EditorFor)
