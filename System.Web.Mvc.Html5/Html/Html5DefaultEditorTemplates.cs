@@ -466,6 +466,9 @@ namespace System.Web.Mvc.Html
                 case DataType.Password:
                     set("password");
                     break;
+                case DataType.Currency:
+                    set("number");
+                    break;
                 case DataType.Date:
                     set("date");
                     break;
@@ -480,6 +483,9 @@ namespace System.Web.Mvc.Html
                     break;
                 case DataType.Time:
                     set("time");
+                    break;
+                case DataType.PhoneNumber:
+                    set("tel");
                     break;
                 case DataType.Url:
                     set("url");

@@ -7,18 +7,25 @@ namespace Html5.Web.Models
     public class NumericViewModel
     {
         public byte Byte { get; set; } 
-        public short Short { get; set; } 
-        [Html5UseDefaultMinMax]
+        public short Short { get; set; }
+
+        [Html5Number]
+        public string StringAsNumber { get; set; } 
+        
         [Html5Step(5)]
+        [Html5UseDefaultMinMax]
         public int Int { get; set; }
 
         [Html5Range]
         [Html5UseDefaultMinMax]
         public long Long { get; set; } 
+        
         [Range(10, 100)]
         public float Float { get; set; } 
+        
         public double Double { get; set; } 
-        [Html5Step(0.1)]
+        
+        [Html5Step(0.5)]
         public decimal Decimal { get; set; } 
     }
 
@@ -35,6 +42,7 @@ namespace Html5.Web.Models
 
         [Html5Search]
         public string Search { get; set; }
+
         [Html5Color]
         public string Color { get; set; }
     }

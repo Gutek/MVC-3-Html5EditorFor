@@ -20,6 +20,14 @@
             @Html.EditorFor(model => model.Short)
             @Html.ValidationMessageFor(model => model.Short)
         </div>
+        
+        <div class="editor-label">
+            @Html.LabelFor(model => model.StringAsNumber)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.StringAsNumber)
+            @Html.ValidationMessageFor(model => model.StringAsNumber)
+        </div>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Int)

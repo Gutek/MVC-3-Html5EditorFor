@@ -1,5 +1,28 @@
 ﻿namespace System.Web.Mvc
 {
+    public class Html5InputTypeAttribute : HtmlAttribute
+    {
+        public Html5InputTypeAttribute(Html5InputType inputType) : base("type", inputType == Html5InputType.DateTimeLocal ? "datetime-local" : inputType.ToString().ToLower()) { }
+    }
+
+    public enum Html5InputType
+    {
+        Email,
+        Url,
+        Number,
+        Range,
+        Date, 
+        Month, 
+        Week, 
+        Time, 
+        DateTime, 
+        DateTimeLocal,
+        Search,
+        Color,
+        Tel,
+        Text
+    }
+
     public class Html5RangeAttribute : HtmlAttribute
     {
         public int? Min { get; set; }
@@ -81,6 +104,10 @@
     {
         public Html5PasswordAttribute() : base("type", "password") { }
     }
+    public class Html5NumberAttribute : HtmlAttribute
+    {
+        public Html5NumberAttribute() : base("type", "number") { }
+    }
     public class Html5UrlAttribute : HtmlAttribute
     {
         public Html5UrlAttribute() : base("type", "url") { }
@@ -94,6 +121,11 @@
     public class Html5MinAttribute : HtmlAttribute
     {
         public Html5MinAttribute(int value) : base("max", value) {}
+    }
+    
+    public class Html5PhoneAttribute : HtmlAttribute
+    {
+        public Html5PhoneAttribute() : base("type", "tel") { }
     }
 
     public class Html5UseDefaultMinMaxAttribute : HtmlAttribute

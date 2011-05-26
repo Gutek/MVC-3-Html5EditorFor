@@ -22,6 +22,14 @@
         </div>
 
         <div class="editor-label">
+            @Html.LabelFor(model => model.StringAsNumber)
+        </div>
+        <div class="editor-field">
+            @Html.Html5EditorFor(model => model.StringAsNumber)
+            @Html.ValidationMessageFor(model => model.StringAsNumber)
+        </div>
+
+        <div class="editor-label">
             @Html.LabelFor(model => model.Int)
         </div>
         <div class="editor-field">
