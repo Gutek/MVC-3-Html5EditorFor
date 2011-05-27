@@ -15,4 +15,8 @@ Code on github contains:
 - Source code for Html5EditorFor
 - Sample web site
  
-Library is avaliable on [NuGet](http://www.nuget.org/List/Packages/Html5EditorFor)
+Library is available on [NuGet](http://www.nuget.org/List/Packages/Html5EditorFor)
+
+# Description
+
+Description is available in Polish [here](http://blog.gutek.pl/post.aspx?id=32c4808e-a6f0-452d-8ce2-9d799bf8c809), English translation by [Google](http://translate.google.com/translate?u=http%3A%2F%2Fblog.gutek.pl%2Fpost.aspx%3Fid%3D32c4808e-a6f0-452d-8ce2-9d799bf8c809&sl=pl&tl=en&hl=&ie=UTF-8)
